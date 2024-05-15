@@ -22,7 +22,7 @@ Very small CLI utility to remove PII watermarks from pdfs downloaded from Move U
 [pymupdf.Document.save](https://pymupdf.readthedocs.io/en/latest/document.html#Document.save) method for more details on garbage collection.  
 
 ### TLDR
-- `unmarker watermarker.pdf`  
+- `unmarker watermarked.pdf`  
 - `unmarker -o unmarked.pdf watermarked.pdf`  
 - `unmarker --garbage 3 watermarked.pdf`
 
