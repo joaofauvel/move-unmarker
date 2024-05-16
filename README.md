@@ -6,9 +6,8 @@ Beware that there is no input sanitization or error checking, you are on your ow
 pdf that has at least one content stream per page, which is basically every pdf in the wild. Unless the pdf has a watermark corresponding to the 2nd 
 content stream of every page this will either do nothing (with the exception of changing compression options and maybe other idiosyncrasies of PyMuPDF 
 when it comes to writing a pdf) or, in case it does have a 2 or more content streams on a page, it will keep just the first and likely make the file useless, 
-though it will still open. 
-Most pdf writers concatenate multiple content streams into one, so chances are it won't do anything or just crash.
-This tool will overwrite without confirmation any file with the same name as `--output` (default "unmarked.pdf").
+though it will still open. Most pdf writers concatenate multiple content streams into one, so chances are it won't do anything or just crash.  
+This tool will **overwrite without confirmation** any file with the same name as `--output` (default "unmarked.pdf").
 
 ## Installation
 1. Make sure Python 3.8 or higher and pip are installed
